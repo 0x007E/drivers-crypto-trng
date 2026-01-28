@@ -28,7 +28,7 @@ The library can be downloaded (`zip` or `tar`), cloned or used as submodule in a
 
 ``` bash
 mkdir -p ./drivers/crypto/
-git clone https://github.com/0x007E/drivers-crypto-trng.git
+git clone https://github.com/0x007E/drivers-crypto-trng.git ./drivers/crypto
 mv ./drivers/crypto/drivers-crypto-trng ./drivers/crypto/trng
 ```
 
