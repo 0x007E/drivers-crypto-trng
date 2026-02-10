@@ -26,7 +26,7 @@ The library can be downloaded (`zip` or `tar`), cloned or used as submodule in a
 
 ### Using with `git clone`
 
-``` bash
+```sh
 mkdir -p ./drivers/crypto/
 git clone https://github.com/0x007E/drivers-crypto-trng.git ./drivers/crypto
 mv ./drivers/crypto/drivers-crypto-trng ./drivers/crypto/trng
@@ -34,13 +34,13 @@ mv ./drivers/crypto/drivers-crypto-trng ./drivers/crypto/trng
 
 ### Using as `git submodule`
 
-``` bash
+```sh
 git submodule add https://github.com/0x007E/drivers-crypto-trng.git  drivers/crypto/trng
 ```
 
 ## Programming
 
-``` c
+```c
 #include "../lib/drivers/crypto/trng/trng.h"
 
 // Continously pin status readin (e.g. through timer)
