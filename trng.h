@@ -15,7 +15,7 @@
  * 
  * @note This file is part of a larger embedded project and is subject to the license specified in the repository. For updates, documentation, and the complete revision history, see the project's GitHub repository.
  * 
- * @see https://github.com/0x007e/driver-crypto-trng "TRNG driver library"
+ * @see https://github.com/0x007e/drivers-crypto-trng "TRNG driver library"
  */
 
 #ifndef TRNG_H_
