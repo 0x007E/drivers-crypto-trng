@@ -2,6 +2,8 @@
 
 # `TRNG Crypto Driver`
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/0x007E/drivers-crypto-trng)
+
 This hardware abstracted driver can be used to interact with a external [ring-oscillator](#additional-information) circutit or any other random bit generator. The hardware layer is fully abstract an can be switched between different plattforms.
 
 ## File Structure
