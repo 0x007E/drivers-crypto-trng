@@ -9,24 +9,24 @@ on:
     - main
 
 env:
-  OUTPUT_FOLDER: "./output"
+  OUTPUT_FOLDER: "output"
 
 jobs:
   pack-library:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository for deployment
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
 
       - name: Prepare library package
         run: |
           mkdir -p ./${{ env.OUTPUT_FOLDER }}/drivers/crypto/trng
-          cp ./trng.c ./${{ env.OUTPUT_FOLDER }}/drivers/crypto/trng/
-          cp ./trng.h ./${{ env.OUTPUT_FOLDER }}/drivers/crypto/trng/
+          cp -r ./trng.c ./${{ env.OUTPUT_FOLDER }}/drivers/crypto/trng/
+          cp -r ./trng.h ./${{ env.OUTPUT_FOLDER }}/drivers/crypto/trng/
 
       - name: Upload library package
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
             name: library-package
-            path: ${{ env.OUTPUT_FOLDER }}
+            path: ./${{ env.OUTPUT_FOLDER }}
             retention-days: 1
